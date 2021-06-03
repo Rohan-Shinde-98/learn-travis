@@ -3,9 +3,7 @@ os: linux
 dist: bionic
 jobs:
   include:
-    - stage: Stage 1
-      language: go
-      script: go --version
+      script: echo "Staage 1"
     - stage: Stage 2
       language: bash
       script: echo "Hello World"
