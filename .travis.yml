@@ -5,7 +5,7 @@ jobs:
   include:
     - stage: Stage 1
       language: go
-      script: fmt.Println("Hello World")
+      script: go --version
     - stage: Stage 2
       language: bash
       script: echo "Hello World"
