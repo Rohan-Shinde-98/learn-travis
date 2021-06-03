@@ -1,14 +1,16 @@
-arch: ppc64le
 os: linux
 dist: bionic
 jobs:
   include:
     - stage: Stage 1
       name: renamed the stage 1 job
+      arch: ppc64le
       script: echo "Staage 1"
       script: echo "Stage 2"
     - stage: middleware
       name: Middleware staged job
+      echo "testing......."
+      arch: s390x
     - stage: Stage 2
       language: bash
       script: echo "Hello World"
