@@ -4,12 +4,14 @@ jobs:
   include:
     - stage: Stage 1
       name: renamed the stage 1 job
-      arch: ppc64le
+      arch: 
+      - ppc64le
+      - s390x
       script: echo "Staage 1"
       script: echo "Stage 2"
     - stage: middleware
       name: Middleware staged job
-      echo "testing......."
+      script: echo "testing......."
       arch: s390x
     - stage: Stage 2
       language: bash
