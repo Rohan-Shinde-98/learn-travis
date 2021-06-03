@@ -6,6 +6,7 @@ jobs:
     - stage: Stage 1
       name: renamed the stage 1 job
       script: echo "Staage 1"
+      script: echo "Stage 2"
     - stage: middleware
       name: Middleware staged job
     - stage: Stage 2
