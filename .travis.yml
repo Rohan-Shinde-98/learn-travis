@@ -3,7 +3,7 @@ os: linux
 dist: bionic
 jobs:
   include:
-      script: echo "Staage 1"
+    - script: echo "Staage 1"
     - stage: Stage 2
       language: bash
       script: echo "Hello World"
